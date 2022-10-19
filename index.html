@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="icon" href="/weather.png" type="png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather Forecast</title>
+</head>
+<body>
+    
+<div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" id="search" placeholder="Enter a City">
+            <button type="submit" id="btn" > <i class="fas fa-search"></i> </button>
+        </div>
+    
+    <div class="weather ">
+        <h1 class="city"></h1>
+        <div class="temp">
+            <img src="" alt="" class="icon">
+            <h2 class="show-temp"></h2>        
+        </div>
+        
+        <div class="description"></div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+    </div>
+    <p class="end">Made with ❤️ by SHIVANSH SONI</p>   
+
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
