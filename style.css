@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height: 100vh;
     margin: 0;
     background-color: #222;
     font-family: 'Open sans';
@@ -19,38 +20,43 @@ body{
     background-size: cover;
     font-size: 120%;
 }
-.card{
+
+.card {
     background: #000000d0;
-    color:white;
-    padding: 2em ;
+    color: white;
+    padding: 2em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
 }
-.search{
+
+.search {
     display: flex;
-    align-items: center; 
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
 }
-button{
+
+button {
     margin: .25;
     margin-top: -20px;
-    border-radius: 50%; 
+    border-radius: 50%;
     position: relative;
     right: 12%;
-    border:none;
+    border: none;
     height: 44px;
     width: 109px;
     outline: none;
     background: #7c7c7c;
-    color: white; 
+    color: white;
     transition: .2s ease-in-out;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     background: #7c7c7c6b;
 }
-.search-bar{
+
+.search-bar {
     border: none;
     outline: none;
     padding: .4em 1em;
@@ -62,110 +68,126 @@ button:hover{
     width: 45rem;
     margin-bottom: 20px;
 }
-h1.temp{
+
+h1.temp {
     margin: 0;
-    
+
 }
 
-.show-temp{
+.show-temp {
     margin: 10px 0;
     font-size: 35px;
     flex: 1;
 }
-.show-temp:hover{
+
+.show-temp:hover {
     cursor: pointer;
 }
-.icon{
+
+.icon {
     width: 20%;
     /* max-height: 100%; */
 }
-.temp{
+
+.temp {
     display: flex;
     margin: .5em 0;
 }
-.description, .humidity ,.wind{
-    margin:.25em;
-}
-.end{
-   text-align: center;
-   color:white;
-   margin-top: 35px;
-   font-size: 12px;
+
+.description,
+.humidity,
+.wind {
+    margin: .25em;
 }
 
-.weather.loading{
+.end {
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+.weather.loading {
     visibility: hidden;
     max-height: 20px;
     position: relative;
 }
-.weather.loading::after{
+
+.weather.loading::after {
     visibility: visible;
-    content:"loading...";
-    color:white;
+    content: "loading...";
+    color: white;
     position: absolute;
-    top:0;
+    top: 0;
     left: 20px;
 }
 
 /* ---------------------------
 MEDIA QUERIES
 ------------------------------*/
-@media screen and (min-width:300px )and (max-width:362px) {
-    .body{
+@media screen and (min-width:300px)and (max-width:362px) {
+    .body {
         background-image: url('https://source.unsplash.com/random/360×740/?landscapes');
     }
 }
-@media Screen and (min-width:359px) and (max-width:400px){
-    body{
-    background-image: url('https://source.unsplash.com/random/412×915/?landscapes');
-    font-size: 1rem;
-    height: 100vh   ;
+
+@media Screen and (min-width:359px) and (max-width:400px) {
+    body {
+        background-image: url('https://source.unsplash.com/random/412×915/?landscapes');
+        font-size: 1rem;
+        height: 100vh;
     }
-    .card{
+
+    .card {
         width: 90%;
     }
-    .search-bar{
+
+    .search-bar {
         width: 600px;
         max-width: 900px;
     }
-    button{
-        width:0px;
-        height: 35px;    
+
+    button {
+        width: 0px;
+        height: 35px;
     }
-    
+
 }
 
-@media screen and (min-width:380px) and (max-width:400px){
-    body{
+@media screen and (min-width:380px) and (max-width:400px) {
+    body {
         margin-top: -90px;
         font-size: 20px;
         background-image: url('https://source.unsplash.com/random/412×915/?landscapes');
     }
-    .card{
+
+    .card {
         width: 85%;
     }
-    button{
-        width:0px;
+
+    button {
+        width: 0px;
         max-width: 100px;
-        height: 45px;    
+        height: 45px;
     }
-   
+
 }
 
 @media screen and (min-width:400px) and (max-width:416px) {
-    body{
+    body {
         margin-top: -90px;
         font-size: 20px;
         background-image: url('https://source.unsplash.com/random/412×915/?landscapes');
     }
-    .card{
+
+    .card {
         width: 85%;
     }
-    button{
-        width:0px;
-        max-width: 100px;
-        height: 45px;    
-    }
-   
-}
 
+    button {
+        width: 0px;
+        max-width: 100px;
+        height: 45px;
+    }
+
+}
